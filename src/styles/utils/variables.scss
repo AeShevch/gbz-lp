@@ -1,5 +1,16 @@
-// Mobile first
-$mediaWidthMobile: 320px;
+// Mobile steps
+$mediaWidthMobile: 576px;
 $mediaWidthTablet: 768px;
-$mediaWidthTabletHorizontal: 1024px;
-$mediaWidthLaptop: 1366px;
+$mediaWidthTabletHorizontal: 992px;
+$mediaWidthLaptop: 1200px;
+$mediaWidthDesktop: 1440px;
+
+:root {
+  // Colors
+  --accent-color: #27ae60;
+  --hover-accent-color: #e57b00;
+  --alt-accent-color: #eb5757;
+  --main-text-color: #000;
+  --muted-text-color: #828282;
+  --border-color: #e0e0e0;
+}

@@ -1,0 +1,51 @@
+.gbz-hero {
+  position: relative;
+  height: 547px;
+
+  &__inner {
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 43px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    max-width: 662px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    color: var(--muted-text-color);
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    max-height: 100%;
+  }
+
+  &__buy-block {
+    display: flex;
+  }
+
+  &__price {
+    font-size: 46px;
+    line-height: 1;
+    color: var(--alt-accent-color);
+    margin-left: 1em;
+    font-weight: 600;
+  }
+}

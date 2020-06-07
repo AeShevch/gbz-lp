@@ -1,5 +1,17 @@
-@import "common/global";
+@import "../../node_modules/normalize.css/normalize.css";
 
-@import "common/header";
+@import "utils/variables";
 
-@import "common/footer";
+@import "utils/base";
+
+@import "mixins/media";
+
+@import "mixins/reset";
+
+@import "components/container";
+
+@import "components/button";
+
+@import "common/hero";
+
+@import "common/variants";
