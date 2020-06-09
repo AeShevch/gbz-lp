@@ -1,0 +1,63 @@
+.gbz-constitution {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px -24px 0;
+  }
+
+  &__item {
+    flex: 1 1 550px;
+    margin: 0 24px 24px 0;
+  }
+}
+
+.gbz-product {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  padding: 48px;
+
+  @media screen and (max-width: $mediaWidthMobile) {
+    padding: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin: 0 0 12px;
+  }
+
+  &__count {
+    font-size: 18px;
+    color: var(--accent-color);
+  }
+
+  &__desc {
+    font-size: 18px;
+    color: var(--muted2-text-color);
+  }
+
+  &__link {
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: var(--muted-text-color);
+    margin-top: auto;
+  }
+
+  &__img {
+    flex: 0 0 222px;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+
+    @media screen and (max-width: $mediaWidthMobile) {
+      display: none;
+    }
+  }
+}

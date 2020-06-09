@@ -1,0 +1,51 @@
+.gbz-scheme {
+  margin-bottom: 100px;
+}
+
+.gbz-month-scheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin: 0 0 12px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    margin: 0 0 32px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px -24px 0;
+  }
+
+  &__item {
+    flex: 1 1 270px;
+    margin: 0 24px 24px 0;
+  }
+}
+
+.gbz-month-item {
+  border: 1px solid var(--accent-color);
+  padding: 23px 31px;
+
+  &__title {
+    font-size: 24px;
+    margin: 0 0 14px;
+  }
+
+  &__desc {
+    margin: 0;
+    color: var(--muted2-text-color);
+  }
+}

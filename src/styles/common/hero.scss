@@ -1,6 +1,19 @@
 .gbz-hero {
   position: relative;
   height: 547px;
+  background-color: var(--bg-color);
+
+  @media screen and (max-width: $mediaWidthTabletHorizontal) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, .7);
+    }
+  }
 
   &__inner {
     height: 100%;
@@ -21,11 +34,24 @@
     text-transform: uppercase;
     color: var(--accent-color);
     max-width: 662px;
+
+    @media screen and (max-width: $mediaWidthTabletHorizontal) {
+      font-size: 35px;
+      text-transform: none;
+    }
+
+    @media screen and (max-width: $mediaWidthMobile) {
+      font-size: 30px;
+    }
   }
 
   &__desc {
     font-size: 24px;
     color: var(--muted-text-color);
+
+    @media screen and (max-width: $mediaWidthMobile) {
+      font-weight: 700;
+    }
   }
 
   &__bg {
@@ -33,12 +59,20 @@
     right: 0;
     top: 0;
     bottom: 0;
-    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
     max-height: 100%;
+
+    @media screen and (max-width: $mediaWidthDesktop) {
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 
   &__buy-block {
     display: flex;
+
+    @media screen and (max-width: $mediaWidthMobile) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__price {
@@ -47,5 +81,9 @@
     color: var(--alt-accent-color);
     margin-left: 1em;
     font-weight: 600;
+
+    @media screen and (max-width: $mediaWidthMobile) {
+      margin: 0 0 .5em;
+    }
   }
 }

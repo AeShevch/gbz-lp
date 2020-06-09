@@ -6,7 +6,7 @@
   }
 
   &__item {
-    flex: 1 1 400px;
+    flex: 1 1 300px;
     margin: 0 24px 24px 0;
   }
 }
@@ -20,13 +20,25 @@
   align-items: center;
   padding: 30px;
 
-  &:hover,
-  &_selected {
+  @media screen and (max-width: $mediaWidthMobile) {
+    padding: 15px;
+  }
+
+  &:hover {
     border-color: var(--accent-color);
   }
 
   &_selected {
     transform: translateY(-10px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+
+    .gbz-variant__btn {
+      background-color: var(--alt-accent-color);
+
+      &:hover {
+        background-color: var(--accent-color);
+      }
+    }
   }
 
   &__img {
