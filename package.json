@@ -1,5 +1,5 @@
 {
-  "name": "gulp-template",
+  "name": "Gbz-lp",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -12,7 +12,7 @@
     "eslint-fix": "eslint ./src/js/** --fix"
   },
   "keywords": [],
-  "author": "Denys Vykhrystiuk",
+  "author": "Shevchenko Alexandr",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -41,8 +41,6 @@
     "gulp-npm-dist": "^1.0.3",
     "gulp-npm-files": "^0.1.3",
     "gulp-plumber": "^1.2.1",
-    "gulp-pug": "^4.0.1",
-    "gulp-pug-linter": "^1.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
@@ -51,9 +49,8 @@
     "gulp-stylelint": "^13.0.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-w3c-html-validator": "^1.4.4",
-    "husky": "^4.2.3",
     "lighthouse": "^5.6.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "open": "^7.0.2",
     "stylelint": "^13.0.0",
     "stylelint-config-htmlacademy": "^0.1.4",
@@ -63,6 +60,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "normalize.css": "^8.0.1"
   },
   "editorconfig-cli": [
@@ -72,10 +70,5 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run build"
-    }
-  }
+  ]
 }

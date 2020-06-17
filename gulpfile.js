@@ -4,7 +4,6 @@ const html = require('./gulp/tasks/html')
 const styles = require('./gulp/tasks/styles')
 const script = require('./gulp/tasks/script')
 const fonts = require('./gulp/tasks/fonts')
-const imageMinify = require('./gulp/tasks/imageMinify')
 const clean = require('./gulp/tasks/clean')
 const copyDependencies = require('./gulp/tasks/copyDependencies')
 const lighthouse = require('./gulp/tasks/lighthouse')
@@ -17,7 +16,7 @@ function setMode(isProduction = false) {
   }
 }
 
-const dev = gulp.parallel(html, styles, script, fonts, imageMinify, svgSprite)
+const dev = gulp.parallel(html, styles, script, fonts, svgSprite)
 
 const build = gulp.series(clean, copyDependencies, dev)
 
